@@ -1,0 +1,256 @@
+{% load static %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Medical-Bot</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/progressbar_barfiller.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated-headline.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    
+    
+</head>
+
+<body style="background-color: #b7d0fb;">
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <!-- <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a> -->
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li class="active" ><a href="http://127.0.0.1:8000/">Home</a></li>
+
+                                              
+                                                                                                                                          
+                                                {% if user.is_authenticated %}
+                                              
+                                                <li><a href="#">Profile</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="http://127.0.0.1:8000/accounts/change/profile/">Change Profile</a></li>
+                                                        <li><a href="http://127.0.0.1:8000/accounts/change/password/">Change Password</a></li>
+                                                      
+                                                    </ul>
+                                                </li>
+
+                                                <li class="active" ><a href="http://127.0.0.1:8000/chatbot/doctors">Doctor Near Me</a></li>
+                                                <li class="active" ><a href="http://127.0.0.1:8000/mealplanmaker/weekly">Meal Planer</a></li>
+
+                                                
+                                               
+
+                                                <li><a href="#">Predict Disease</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="/predict/diabetes/">Diabetes</a></li>
+                                                        <li><a href="/predict/breast/">Breast Cancer</a></li>
+                                                        <li><a href="/predict/heart/">Heart Disease</a></li>
+                                                        <li><a href="/predict/lung_cancer/">Lung Cancer</a></li>
+                                                      
+                                                    </ul>
+                                                </li>
+
+
+                                                                                    
+                                                <li><a href="#">Features</a>
+                                                    <ul class="submenu">
+                                                    
+                                                        <li><a href="/med_chatbot/">Chatbot</a></li>
+                                                                                                    
+                                                                                                       
+                                                    </ul>
+                                                </li>
+
+                                                <li class="button-header margin-left"><a href="{% url 'accounts:log_out_confirm' %}" class="btn">Logout</a></li>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="" style="color: rgb(9, 250, 9);">Welcome, {{ user.username }}!</a>
+
+                                                </li>
+
+                                                    {% else %}
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="" style="color: rgb(9, 250, 9);">Welcome, Guest!</a>
+    
+                                                    </li>
+
+                                                 
+                                                        <li class="button-header margin-left"><a href="http://127.0.0.1:8000/accounts/sign-up/" class="btn">Join</a></li>
+                                                        <li class="button-header"><a href="http://127.0.0.1:8000/accounts/log-in/" class="btn btn3">Log in</a></li>
+                                                    {% endif %}
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!--? slider Area Start-->
+        <section class="slider-area ">
+            <div class="slider-active">
+                <!-- Single Slider -->
+                <div class="single-slider slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-7 col-md-12">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">Medical-Bot</h1>
+                                    <p data-animation="fadeInLeft" data-delay="0.4s">
+                                        
+                                        The medical bot system is a web-based platform designed to provide users with quick and accurate medical information and assistance. Through an intuitive interface, users can interact with the bot to ask questions about symptoms, medications, treatments, and general health inquiries. The system utilizes advanced natural language processing algorithms to understand user queries and provide relevant responses. It offers personalized recommendations based on the user's input and medical history, helping users make informed decisions about their health. Additionally, the system can connect users with healthcare professionals for further assistance or appointments if needed. With its accessible and user-friendly interface, the medical bot system aims to empower individuals to take control of their health and well-being.
+                                        
+                                       
+                                    </p>
+
+                                    {% if user.is_authenticated %}
+                                    <!-- User is authenticated, do not show the button -->
+                                {% else %}
+                                    <a href="{% url 'accounts:log_in' %}" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join for Free</a>
+                                {% endif %}
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+            </div>
+        </section>
+        <!-- ? services-area -->
+        <div class="services-area">
+            <div class="container">
+                <div class="row justify-content-sm-center">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon1.svg" alt="">
+                            </div>
+                            <div class="features-caption">
+                                <h3>AI Chatbot+</h3>
+                                <p>Discuss your concerns with us and get free advice.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon2.svg" alt="">
+                            </div>
+                            <div class="features-caption">
+                                <h3>Education +</h3>
+                                <p>Features for education and learning with our AI Sysytem free.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon3.svg" alt="">
+                            </div>
+                            <div class="features-caption">
+                                <h3>Find Doctor +</h3>
+                                <p>Find docctor near you with AI recommendations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        {% block content %}{% endblock %}
+
+    </main>
+    {% include 'footer.html' %}
+
+  <!-- Scroll Up -->
+  <div id="back-top" >
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- JS here -->
+<script src="{% static 'assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+<script src="{% static 'assets/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<!-- Jquery Mobile Menu -->
+<script src="{% static 'assets/js/jquery.slicknav.min.js' %}"></script>
+
+<!-- Jquery Slick, Owl-Carousel Plugins -->
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/js/slick.min.js' %}"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="{% static 'assets/js/wow.min.js' %}"></script>
+<script src="{% static 'assets/js/animated.headline.js' %}"></script>
+<script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+
+<!-- Date Picker -->
+<script src="{% static 'assets/js/gijgo.min.js' %}"></script>
+<!-- Nice-select, sticky -->
+<script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.sticky.js' %}"></script>
+<!-- Progress -->
+<script src="{% static 'assets/js/jquery.barfiller.js' %}"></script>
+
+<!-- counter, waypoint,Hover Direction -->
+<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'assets/js/hover-direction-snake.min.js' %}"></script>
+
+<!-- contact js -->
+<script src="{% static 'assets/js/contact.js' %}"></script>
+<script src="{% static 'assets/js/jquery.form.js' %}"></script>
+<script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+<script src="{% static 'assets/js/mail-script.js' %}"></script>
+<script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
+
+<!-- Jquery Plugins, main Jquery -->    
+<script src="{% static 'assets/js/plugins.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>

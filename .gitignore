@@ -1,0 +1,10 @@
+pro
+*.py
+data
+main
+app
+accounts
+chatbot_ptoject
+prediction
+mealplanmaker
+db.sqlite

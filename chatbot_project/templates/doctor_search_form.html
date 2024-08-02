@@ -1,0 +1,94 @@
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicalBot</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'chatbot_project/stylesheets/staticStyle.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(45deg, #0283be, #b0d8f3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #070707;
+            font-family: Arial, sans-serif;
+        }
+
+        .centered-image {
+            max-width: 100%; /* Make sure the image does not exceed the container width */
+            max-height: 100%; /* Make sure the image does not exceed the container height */
+        }
+
+        .progress-bar {
+            width: 80%;
+            margin: 20px auto;
+            height: 30px;
+            background-color: #f0f0f0;
+            position: relative;
+            border-radius: 5px;
+            display: none; /* Hide the progress bar initially */
+        }
+
+        .progress-bar-inner {
+            height: 100%;
+            background-color: #4CAF50;
+            width: 0;
+            position: absolute;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+{% include 'nav.html' %}
+<div class="position-relative"></div>
+{% if request.user.is_authenticated %}
+
+
+<div class="row justify-content-center"> <!-- Center the row content horizontally -->
+    <div class="col-lg-10"> <!-- Adjust column width for large screens -->
+        <div class="card shadow p-3"> <!-- Add card styling with shadow and padding -->
+            <h2 class="text-center mb-4">Doctor Search</h2>
+            <hr>
+            <form id="searchForm" method="post" action="">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary btn-block" id="searchButton">Search</button> <!-- Add button styling -->
+            </form>
+        </div>
+    </div>
+</div>
+
+    <div class="progress-bar">
+        <div class="progress-bar-inner"></div>
+    </div>
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            // Show the progress bar
+            document.querySelector('.progress-bar').style.display = 'block';
+
+            // Start the progress bar animation
+            var progressBarInner = document.querySelector('.progress-bar-inner');
+            var width = 0;
+            var interval = setInterval(function(){
+                width += (100/20);
+                progressBarInner.style.width = width + '%';
+                if (width >= 100) {
+                    clearInterval(interval);
+                }
+            }, 1000);
+        });
+    </script>
+</div>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!-- food_recommendation/templates/recommendation.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendation</title>
+</head>
+<body>
+    <h2>Recommended Food Items</h2>
+    <ul>
+        {% for item in suggested_items %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

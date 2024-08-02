@@ -1,0 +1,65 @@
+<!-- chatbot/templates/bot.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Bot .</title>
+    <!-- Include any necessary styles or libraries -->
+</head>
+<body>
+
+<div id="chat-container">
+    <div id="chat-log">
+        <!-- Chat log will be displayed here -->
+    </div>
+    <form id="chat-form" method="post" action="{% url 'chatbot_project:chatbot' %}">
+        {% csrf_token %}
+        <input type="text" name="user_message" id="user-input" placeholder="Type your message here...">
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const chatForm = document.getElementById('chat-form');
+        const userInput = document.getElementById('user-input');
+        const chatLog = document.getElementById('chat-log');
+
+        chatForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const userMessage = userInput.value.trim();
+
+            // Display user's message in the chat log
+            chatLog.innerHTML += `<div>User: ${userMessage}</div>`;
+
+            // Send user's message to the server (Django view)
+            fetch('/chatbot/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRFToken': getCookie('csrftoken') // Include CSRF token if using Django's CSRF protection
+                },
+                body: `user_message=${userMessage}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display bot's response in the chat log
+                chatLog.innerHTML += `<div>Bot: ${data.response}</div>`;
+            });
+
+            // Clear the input field
+            userInput.value = '';
+        });
+
+        // Function to get CSRF token from cookies
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+    });
+</script>
+
+</body>
+</html>

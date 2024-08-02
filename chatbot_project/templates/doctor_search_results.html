@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicalBot</title>
+    <!-- <link rel="stylesheet" href="{% static 'chatbot_project/stylesheets/staticStyle.css' %}"> -->
+    <!-- Include Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(45deg, #0283be, #0283be);
+            color: #070707;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+    </style>
+</head>
+<body>
+    {% include 'nav.html' %}
+
+    {% if request.user.is_authenticated %}
+        <div class="container mt-5"> <!-- Ensure container is placed after the navbar -->
+            <br><br>
+            <h1>Doctor Search Results</h1>
+            <br>
+            {{results}}
+            <ul>
+                {% for result in results %}
+                <li>
+                    {% if result.image_url %}
+                        <strong>URL:</strong> 
+                        <div style="display: flex; align-items: center;">
+                            <a href="{{ result.url }}"><img src="{{ result.image_url }}" alt="Profile Picture" style="max-width: 100px;"></a>
+                            <button onclick="window.open('{{ result.url }}', '_blank')" class="btn btn-primary" style="margin-left: 10px;">Open</button>
+                        </div>
+                        <br>
+                    {% else %}
+                        <strong>URL:</strong> <a href="{{ result.url }}">{{ result.url }}</a> <button onclick="window.open('{{ result.url }}', '_blank')" class="btn btn-primary">Open</button><br>
+                    {% endif %}
+                    <ul>
+                        {% for hospital in result.hospitals %}
+                            <li>{{ hospital }}</li>
+                        {% endfor %}
+                    </ul>
+                    <ul>
+                        {% for doctor in result.doctors %}
+                            <li>{{ doctor }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% empty %}
+                    <h1>Not Found</h1>
+                </li>
+            {% endfor %}
+            
+            
+            
+            </ul>
+        </div>
+        <br><br><br><br><br>
+    {% else %}
+    {% endif %}
+</body>
+</html>

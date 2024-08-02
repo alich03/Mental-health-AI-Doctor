@@ -1,0 +1,288 @@
+{
+  "questions": [
+    {
+      "question": "What is DNA test",
+      "answer": "A DNA test is a test used to identify and analyze the genetic information in a person's DNA."
+    },
+    {
+      "question": "What is cancer",
+      "answer": "Cancer is a group of diseases characterized by the uncontrolled growth and spread of abnormal cells."
+    },
+    {
+      "question": "What is diabetes",
+      "answer": "Diabetes is a chronic condition characterized by high levels of sugar (glucose) in the blood."
+    },
+    {
+      "question": "What is Alzheimer's disease",
+      "answer": "Alzheimer's disease is a progressive disorder that causes brain cells to degenerate and die, leading to memory loss and cognitive decline."
+    },
+    {
+      "question": "What is hypertension",
+      "answer": "Hypertension, or high blood pressure, is a condition in which the force of blood against the artery walls is consistently too high."
+    },
+    {
+      "question": "What is a heart attack",
+      "answer": "A heart attack, also known as a myocardial infarction, occurs when blood flow to a part of the heart is blocked for a long enough time that part of the heart muscle is damaged or dies."
+    },
+    {
+      "question": "What is asthma",
+      "answer": "Asthma is a chronic respiratory condition characterized by inflammation and narrowing of the airways, leading to difficulty breathing, wheezing, and coughing."
+    },
+    {
+      "question": "What is arthritis",
+      "answer": "Arthritis is a term used to describe inflammation of the joints, which can cause pain, stiffness, and swelling."
+    },
+    {
+      "question": "What is depression",
+      "answer": "Depression is a mood disorder characterized by persistent feelings of sadness, hopelessness, and loss of interest or pleasure in activities."
+    },
+    {
+      "question": "What is anxiety",
+      "answer": "Anxiety is a natural response to stress or danger, but when it becomes excessive and persistent, it can interfere with daily activities and quality of life."
+    },
+    {
+      "question": "What is schizophrenia",
+      "answer": "Schizophrenia is a severe mental disorder characterized by disturbances in thought, perception, and behavior, often including hallucinations and delusions."
+    },
+    {
+      "question": "What is bipolar disorder",
+      "answer": "Bipolar disorder is a mental illness characterized by extreme mood swings that include emotional highs (mania or hypomania) and lows (depression)."
+    },
+    {
+      "question": "What is a stroke",
+      "answer": "A stroke occurs when blood flow to part of the brain is interrupted or reduced, depriving brain tissue of oxygen and nutrients, leading to brain cell death."
+    },
+    {
+      "question": "What is HIV/AIDS",
+      "answer": "HIV (human immunodeficiency virus) is a virus that attacks the body's immune system, and AIDS (acquired immunodeficiency syndrome) is the most advanced stage of HIV infection, characterized by severe damage to the immune system."
+    },
+    {
+      "question": "What is osteoporosis",
+      "answer": "Osteoporosis is a condition characterized by weak, brittle bones that are more susceptible to fractures and breaks."
+    },
+    {
+      "question": "What is obesity",
+      "answer": "Obesity is a medical condition characterized by excessive accumulation of body fat, which can have negative effects on health."
+    },
+    {
+      "question": "What is autism",
+      "answer": "Autism, or autism spectrum disorder (ASD), refers to a range of conditions characterized by challenges with social skills, repetitive behaviors, speech, and nonverbal communication."
+    },
+    {
+      "question": "What is Parkinson's disease",
+      "answer": "Parkinson's disease is a progressive nervous system disorder that affects movement, causing tremors, stiffness, and difficulty with balance and coordination."
+    },
+    {
+      "question": "What is multiple sclerosis (MS)",
+      "answer": "Multiple sclerosis (MS) is a chronic disease that affects the central nervous system, including the brain and spinal cord, leading to symptoms such as fatigue, muscle weakness, and difficulty with coordination and balance."
+    },
+    {
+      "question": "What is cataract",
+      "answer": "A cataract is a clouding of the lens in the eye that affects vision, typically occurring with age."
+    },
+    {
+      "question": "What is glaucoma",
+      "answer": "Glaucoma is a group of eye conditions that damage the optic nerve, often as a result of increased pressure within the eye, leading to vision loss and blindness."
+    },
+    {
+      "question": "What is chronic obstructive pulmonary disease (COPD)",
+      "answer": "Chronic obstructive pulmonary disease (COPD) is a group of progressive lung diseases, including emphysema and chronic bronchitis, that make it difficult to breathe."
+    },
+    {
+      "question": "What is hepatitis",
+      "answer": "Hepatitis is inflammation of the liver, most commonly caused by a viral infection but also by other factors such as alcohol use, medications, and autoimmune diseases."
+    },
+    {
+      "question": "What is a concussion",
+      "answer": "A concussion is a mild traumatic brain injury that occurs when a blow or jolt to the head disrupts normal brain function, leading to symptoms such as headache, confusion, and dizziness."
+    },
+    {
+      "question": "What is a kidney stone",
+      "answer": "A kidney stone is a hard, crystalline mineral deposit that forms in the kidney and can cause severe pain when it moves through the urinary tract."
+    },
+    {
+      "question": "What is fibromyalgia",
+      "answer": "Fibromyalgia is a disorder characterized by widespread musculoskeletal pain, fatigue, sleep disturbances, and mood issues."
+    },
+    {
+      "question": "What is irritable bowel syndrome (IBS)",
+      "answer": "Irritable bowel syndrome (IBS) is a common gastrointestinal disorder characterized by abdominal pain, bloating, and changes in bowel habits, without any evidence of underlying damage or disease."
+    },
+    {
+      "question": "What is sleep apnea",
+      "answer": "Sleep apnea is a sleep disorder characterized by pauses in breathing or shallow breaths during sleep, often leading to poor sleep quality and daytime fatigue."
+    },
+    {
+      "question": "What is a hernia",
+      "answer": "A hernia occurs when an organ or fatty tissue protrudes through a weak spot or tear in the surrounding muscle or connective tissue, typically in the abdomen or groin."
+    },
+    {
+      "question": "What is gout",
+      "answer": "Gout is a form of arthritis characterized by sudden and severe pain, redness, and swelling in the joints, often affecting the big toe."
+    },
+    {
+      "question": "What is anemia",
+      "answer": "Anemia is a condition characterized by a deficiency of red blood cells or hemoglobin, resulting in reduced oxygen transport to the body's tissues and organs."
+    },
+    {
+      "question": "What is epilepsy",
+      "answer": "Epilepsy is a neurological disorder characterized by recurrent seizures, which can vary widely in severity and frequency."
+    },
+    {
+      "question": "What is rheumatoid arthritis",
+      "answer": "Rheumatoid arthritis is an autoimmune disease that causes chronic inflammation of the joints, leading to pain, stiffness, and swelling."
+    },
+    {
+      "question": "What is psoriasis",
+      "answer": "Psoriasis is a chronic skin condition characterized by red, itchy, and scaly patches of skin, often affecting the elbows, knees, scalp, and lower back."
+    },
+    {
+      "question": "What is endometriosis",
+      "answer": "Endometriosis is a painful disorder in which tissue similar to the tissue that normally lines the inside of the uterus (endometrium) grows outside the uterus, leading to inflammation, pain, and other symptoms."
+    },
+    {
+      "question": "What is lupus",
+      "answer": "Lupus is a chronic autoimmune disease in which the body's immune system attacks its own tissues and organs, leading to inflammation and damage in various parts of the body."
+    },
+    {
+      "question": "What is Crohn's disease",
+      "answer": "Crohn's disease is a chronic inflammatory bowel disease characterized by inflammation of the digestive tract, leading to symptoms such as abdominal pain, diarrhea, and weight loss."
+    },
+    {
+      "question": "What is ulcerative colitis",
+      "answer": "Ulcerative colitis is a chronic inflammatory bowel disease characterized by inflammation and ulcers in the lining of the colon and rectum, leading to symptoms such as abdominal pain, diarrhea, and rectal bleeding."
+    },
+    {
+      "question": "What is migraines",
+      "answer": "Migraines are a type of headache disorder characterized by recurrent, severe headaches often accompanied by other symptoms such as nausea, vomiting, and sensitivity to light and sound."
+    },
+    {
+      "question": "What is chronic kidney disease (CKD)",
+      "answer": "Chronic kidney disease (CKD) is a progressive condition characterized by the gradual loss of kidney function over time, leading to kidney failure if left untreated."
+    },
+    {
+      "question": "What is hypothyroidism",
+      "answer": "Hypothyroidism is a condition in which the thyroid gland doesn't produce enough thyroid hormone, leading to symptoms such as fatigue, weight gain, and cold intolerance."
+    },
+    {
+      "question": "What is hyperthyroidism",
+      "answer": "Hyperthyroidism is a condition in which the thyroid gland produces too much thyroid hormone, leading to symptoms such as weight loss, rapid heart rate, and nervousness."
+    },
+    {
+      "question": "What is chronic pain",
+      "answer": "Chronic pain is pain that persists for weeks, months, or even years, often long after an injury or underlying cause has healed."
+    },
+    {
+      "question": "What is chronic fatigue syndrome (CFS)",
+      "answer": "Chronic fatigue syndrome (CFS), also known as myalgic encephalomyelitis (ME), is a complex disorder characterized by extreme fatigue that doesn't improve with rest and is worsened by physical or mental activity."
+    },
+    {
+      "question": "What is osteoarthritis",
+      "answer": "Osteoarthritis is a degenerative joint disease characterized by the breakdown of cartilage in the joints, leading to pain, stiffness, and loss of mobility."
+    },
+    {
+      "question": "What is pancreatitis",
+      "answer": "Pancreatitis is inflammation of the pancreas, a gland located behind the stomach that plays a key role in digestion and blood sugar regulation."
+    },
+    {
+      "question": "What is chronic obstructive pulmonary disease (COPD)",
+      "answer": "Chronic obstructive pulmonary disease (COPD) is a group of progressive lung diseases, including emphysema and chronic bronchitis, that make it difficult to breathe."
+    },
+    {
+      "question": "What is hepatitis",
+      "answer": "Hepatitis is inflammation of the liver, most commonly caused by a viral infection but also by other factors such as alcohol use, medications, and autoimmune diseases."
+    },
+    {
+      "question": "What is a concussion",
+      "answer": "A concussion is a mild traumatic brain injury that occurs when a blow or jolt to the head disrupts normal brain function, leading to symptoms such as headache, confusion, and dizziness."
+    },
+    {
+      "question": "What is a kidney stone",
+      "answer": "A kidney stone is a hard, crystalline mineral deposit that forms in the kidney and can cause severe pain when it moves through the urinary tract."
+    },
+    {
+      "question": "What is fibromyalgia",
+      "answer": "Fibromyalgia is a disorder characterized by widespread musculoskeletal pain, fatigue, sleep disturbances, and mood issues."
+    },
+    {
+      "question": "What is irritable bowel syndrome (IBS)",
+      "answer": "Irritable bowel syndrome (IBS) is a common gastrointestinal disorder characterized by abdominal pain, bloating, and changes in bowel habits, without any evidence of underlying damage or disease."
+    },
+    {
+      "question": "What is sleep apnea",
+      "answer": "Sleep apnea is a sleep disorder characterized by pauses in breathing or shallow breaths during sleep, often leading to poor sleep quality and daytime fatigue."
+    },
+    {
+      "question": "What is a hernia",
+      "answer": "A hernia occurs when an organ or fatty tissue protrudes through a weak spot or tear in the surrounding muscle or connective tissue, typically in the abdomen or groin."
+    },
+    {
+      "question": "What is gout",
+      "answer": "Gout is a form of arthritis characterized by sudden and severe pain, redness, and swelling in the joints, often affecting the big toe."
+    },
+    {
+      "question": "What is anemia",
+      "answer": "Anemia is a condition characterized by a deficiency of red blood cells or hemoglobin, resulting in reduced oxygen transport to the body's tissues and organs."
+    },
+    {
+      "question": "What is epilepsy",
+      "answer": "Epilepsy is a neurological disorder characterized by recurrent seizures, which can vary widely in severity and frequency."
+    },
+    {
+      "question": "What is rheumatoid arthritis",
+      "answer": "Rheumatoid arthritis is an autoimmune disease that causes chronic inflammation of the joints, leading to pain, stiffness, and swelling."
+    },
+    {
+      "question": "What is psoriasis",
+      "answer": "Psoriasis is a chronic skin condition characterized by red, itchy, and scaly patches of skin, often affecting the elbows, knees, scalp, and lower back."
+    },
+    {
+      "question": "What is endometriosis",
+      "answer": "Endometriosis is a painful disorder in which tissue similar to the tissue that normally lines the inside of the uterus (endometrium) grows outside the uterus, leading to inflammation, pain, and other symptoms."
+    },
+    {
+      "question": "What is lupus",
+      "answer": "Lupus is a chronic autoimmune disease in which the body's immune system attacks its own tissues and organs, leading to inflammation and damage in various parts of the body."
+    },
+    {
+      "question": "What is Crohn's disease",
+      "answer": "Crohn's disease is a chronic inflammatory bowel disease characterized by inflammation of the digestive tract, leading to symptoms such as abdominal pain, diarrhea, and weight loss."
+    },
+    {
+      "question": "What is ulcerative colitis",
+      "answer": "Ulcerative colitis is a chronic inflammatory bowel disease characterized by inflammation and ulcers in the lining of the colon and rectum, leading to symptoms such as abdominal pain, diarrhea, and rectal bleeding."
+    },
+    {
+      "question": "What is migraines",
+      "answer": "Migraines are a type of headache disorder characterized by recurrent, severe headaches often accompanied by other symptoms such as nausea, vomiting, and sensitivity to light and sound."
+    },
+    {
+      "question": "What is chronic kidney disease (CKD)",
+      "answer": "Chronic kidney disease (CKD) is a progressive condition characterized by the gradual loss of kidney function over time, leading to kidney failure if left untreated."
+    },
+    {
+      "question": "What is hypothyroidism",
+      "answer": "Hypothyroidism is a condition in which the thyroid gland doesn't produce enough thyroid hormone, leading to symptoms such as fatigue, weight gain, and cold intolerance."
+    },
+    {
+      "question": "What is hyperthyroidism",
+      "answer": "Hyperthyroidism is a condition in which the thyroid gland produces too much thyroid hormone, leading to symptoms such as weight loss, rapid heart rate, and nervousness."
+    },
+    {
+      "question": "What is chronic pain",
+      "answer": "Chronic pain is pain that persists for weeks, months, or even years, often long after an injury or underlying cause has healed."
+    },
+    {
+      "question": "What is chronic fatigue syndrome (CFS)",
+      "answer": "Chronic fatigue syndrome (CFS), also known as myalgic encephalomyelitis (ME), is a complex disorder characterized by extreme fatigue that doesn't improve with rest and is worsened by physical or mental activity."
+    },
+    {
+      "question": "What is osteoarthritis",
+      "answer": "Osteoarthritis is a degenerative joint disease characterized by the breakdown of cartilage in the joints, leading to pain, stiffness, and loss of mobility."
+    },
+    {
+      "question": "What is pancreatitis",
+      "answer": "Pancreatitis is inflammation of the pancreas, a gland located behind the stomach that plays a key role in digestion and blood sugar regulation."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<!-- food_recommendation/templates/input_form.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Form</title>
+</head>
+<body>
+    <h2>Input Form</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+    {% if error_message %}
+        <p><strong>Error:</strong> {{ error_message }}</p>
+    {% endif %}
+</body>
+</html>
